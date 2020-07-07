@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingStart="5dp"
+            android:text="name"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            tools:ignore="RtlCompat" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingStart="5dp"
+            android:orientation="horizontal"
+            tools:ignore="RtlCompat">
+
+            <RatingBar
+                android:id="@+id/rate"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:numStars="5"
+                android:progressTint="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/reviewTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:layout_marginStart="5dp"
+                android:text="time"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/suggestedReviewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingStart="5dp"
+            android:text="suggest Review text"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/reviewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingStart="5dp"
+            android:text="text"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18dp"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+
+</LinearLayout>

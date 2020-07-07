@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.muhammed.a7gez.PlaceInfoActivity">
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_color">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/white_color"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/placeImage"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/background_style2"
+                            android:src="@drawable/background_welcome_2" />
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RatingBar
+                                android:id="@+id/placeRate"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:numStars="5"
+                                android:progressTint="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/numberUsers"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/placeName_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/placeCuisines_beverages"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/darker_gray">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="0.5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white_color"
+                        tools:ignore="RtlCompat">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/white_color"
+                            android:gravity="center"
+                            android:text="Min. Charge"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/minimumCharge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/white_color"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="0 EGP"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"
+                            tools:ignore="RtlCompat" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="0.5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white_color"
+                        tools:ignore="RtlCompat">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/white_color"
+                            android:gravity="center"
+                            android:text="Min. Deposit"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/minimumDeposit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/white_color"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="0 EGP"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"
+                            tools:ignore="RtlCompat" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray">
+
+                </View>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_margin="10dp"
+                android:text="Opening Hours"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/openingHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:layout_below="@+id/textView"
+                android:divider="@android:color/black"
+                android:dividerHeight="1.5dp"
+                android:padding="5dp"></android.support.v7.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/openingHours"
+                android:layout_margin="10dp"
+                android:text="Payment Methods"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/paymentMethods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:layout_below="@+id/textView2"
+                android:divider="@android:color/black"
+                android:dividerHeight="1.5dp"
+                android:padding="5dp"></android.support.v7.widget.RecyclerView>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/paymentMethods"
+                android:gravity="end"
+                android:padding="15dp"
+                android:orientation="horizontal"
+                android:background="@color/white_color">
+
+                <TextView
+                    android:id="@+id/numberRatings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="left|center"
+                    android:textSize="20dp"
+                    android:text="0 Ratings"
+                    android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paymentMethods"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:background="@color/white_color">
+
+                <RatingBar
+                    android:id="@+id/placeRateBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:numStars="5"
+                    android:progressTint="@color/colorPrimary"
+                    style="?android:attr/ratingBarStyleSmall"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/placeRateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="20dp"
+                    android:text="0.0"
+                    android:textColor="@android:color/black"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:layout_below="@+id/linearLayout2"
+                android:divider="@android:color/black"
+                android:dividerHeight="1.5dp"
+                android:padding="5dp"></android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/reviews">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.example.muhammed.a7gez.WorkaroundMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/cityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_gravity="left|center"
+                android:padding="10dp"
+                android:background="@color/white_color"
+                android:textSize="18dp"
+                android:text="City"
+                android:textColor="@android:color/black"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

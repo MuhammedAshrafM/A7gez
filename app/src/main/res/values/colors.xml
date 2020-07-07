@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d17785</color>
+    <color name="colorPrimaryDark">#af6570</color>
+    <color name="colorAccent">#d80027</color>
+
+    <!--<color name="colorPrimary">#d80027</color>-->
+    <!--<color name="colorPrimaryDark">#bf0728</color>-->
+    <!--<color name="colorAccent">#5a65df</color>-->
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c74</color>
+    <color name="bg_screen2">#20d2cc</color>
+    <color name="bg_screen3">#4495ff</color>
+
+    <color name="pager_dark_screen1">#d1395c</color>
+    <color name="pager_dark_screen2">#14a895</color>
+    <color name="pager_dark_screen3">#3378d4</color>
+
+    <color name="pager_light_screen1">#f98da5</color>
+    <color name="pager_light_screen2">#8cf9eb</color>
+    <color name="pager_light_screen3">#93c6fd</color>
+
+
+    <color name="white_color">#ffffff</color>
+    <color name="black_color">#000000</color>
+    <color name="off_white_color">#f2f2f2</color>
+    <color name="green">#3dc954</color>
+    <color name="red">#dc2a2a</color>
+    <color name="gray">#faf5f5</color>
+    <color name="coffee_color">#6f4e37</color>
+    <color name="coffee_color_2">#a27250</color>
+    <color name="coffee_color_3">#805a3f</color>
+    <color name="coffee_color_4">#916648</color>
+    <color name="coffee_color_5">#af7f5d</color>
+    <color name="coffee_color_6">#b78c6e</color>
+    <color name="coffee_color_7">#c09a7f</color>
+
+    <color name="cashmere_color">#af6570</color>
+    <color name="cashmere_color_2">#d17785</color>
+    <color name="cashmere_color_3">#bc4053</color>
+    <color name="cashmere_color_4">#c45163</color>
+    <color name="cashmere_color_5">#cb6474</color>
+    <color name="cashmere_color_6">#d78a96</color>
+    <color name="cashmere_color_7">#de9da7</color>
+    <color name="cashmere_color_8">#e4b0b8</color>
+
+    <color name="background_dialog_fragment">#84b78c6e</color>
+
+    <array name="array_pager_active">
+        <item>@color/coffee_color</item>
+        <item>@color/coffee_color</item>
+    </array>
+
+    <array name="array_pager_inactive">
+        <item>@color/coffee_color_7</item>
+        <item>@color/coffee_color_7</item>
+    </array>
+</resources>
